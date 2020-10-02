@@ -34,7 +34,7 @@ const Logo = styled(ReactLogo)`
 
 const Errors = styled.div<{ visible: boolean }>`
     display: ${(props) => (props.visible ? 'block' : 'none')};
-    border: 1px solid #ff073a;
+    border: 1px solid ${(props) => props.theme.colors.NeonRed};
     margin-bottom: 5px;
     padding: 10px;
 `;
