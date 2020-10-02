@@ -39,6 +39,7 @@ This repo is a boilerplate with techologies I usually use and think are the best
 #### Testing
 * Jest
   * React-testing-library
+  * jest-fetch-mock
 
 #### Linting
 * Eslint
