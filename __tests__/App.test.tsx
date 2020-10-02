@@ -8,6 +8,6 @@ test('renders App', () => {
     const { getByText } = render(<App />);
 
     // hello world should be rendered
-    const text = getByText('Hello world');
+    const text = getByText('Hello World');
     expect(text).toBeInTheDocument();
 });

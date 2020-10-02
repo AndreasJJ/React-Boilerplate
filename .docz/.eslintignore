@@ -1,8 +1,0 @@
-.docz
-.idea
-__mocks__
-node_modules
-public
-jest.config.js
-.prettierrc.js
-webpack.config.js
