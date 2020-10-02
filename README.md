@@ -1,5 +1,5 @@
 # React-Boilerplate
-A React boilerplate w/ TypeScript
+A React boilerplate w/ TypeScript and other commonly used libraries/technologies for a good codebase.
 
 ## Why?
 This repo is a boilerplate with techologies I usually use and think are the best choice for a react app. The needs differ for every project, but generally these are the technologies i use. If a technology isn't needed, I'll simply remove it.
