@@ -10,5 +10,6 @@ module.exports = {
   ],
   testPathIgnorePatterns: [
     "<rootDir>/.docz",
+    "__tests__/utils"
   ]
 };
