@@ -24,8 +24,9 @@ This repo is a boilerplate with techologies I usually use and think are the best
 * react-hook-form
 * yup
 
-### Data fetching and caching
+### Data fetching/caching and requests
 * swr
+* axios
 
 ### Date manipulation
 * date-fns
