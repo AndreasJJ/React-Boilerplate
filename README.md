@@ -54,6 +54,59 @@ This repo is a boilerplate with techologies I usually use and think are the best
 * Documentation: **Docz**
 * Git Hooks: **Husky**
 
+## Other technologies that might be useful
+### css loader
+I suggest using ```style-loader``` and ```css-loader```.
+
+Install the libraries and update the webpack config => module => rules, and add the object/code to the arrray
+```
+{
+    test: /\.css$/i,
+    use: ['style-loader', 'css-loader'],
+},
+```
+
+### file loader (f.ex. for fonts)
+I suggest using ```file-loader```.
+
+Install the library and update the webpack config => module => rules, and add the object/code to the arrray
+```
+{
+    test: /\.(woff2|woff|eot|ttf|otf)$/,
+    use: ["file-loader"],
+},
+```
+
+Example .ttf: You will also have to declare ttf as a module typescript. In the folder "src" create a file called "decs.d.ts" (this is where you'd declare libraries that don't havee typescript support if you still wanted to use them" and then paste in the following
+```
+declare module '*.ttf';
+```
+
+### svg loader
+I suggest using ```svg-react-loader```
+
+Install the library and update the webpack config => module => rules, and add the object/code to the arrray
+```
+{
+    test: /\.svg$/,
+    use: ['svg-react-loader']
+},
+```
+
+You will also have to declare svg as a module typescript. In the folder "src" create a file called "decs.d.ts" (this is where you'd declare libraries that don't havee typescript support if you still wanted to use them" and then paste in the following
+```
+declare module '*.svg' {
+    const content: any;
+    export default content;
+}
+```
+Then you'd import and use the svg as such
+```
+import Logo from '../../assets/Logo.svg';
+
+<Logo />
+```
+
 ## How To Run
 ### Production
 #### Application
